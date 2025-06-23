@@ -9,6 +9,8 @@ Start code:
     def add(a, b):
         return a + b
 
+        
+TDD workflow below:
 1. Run the test file to see the test fail. (python3 -m unittest test_calculator.py)
 2. Write the minimum amount of code to make the test pass.
 3. Run the test file again to see the test pass. Refactor the code if necessary or to optimize.
