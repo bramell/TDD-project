@@ -1,3 +1,5 @@
+from collections import Counter
+
 '''
 This is a simple project for practicing Test-Driven Development (TDD) with Python.
 The tests were written first e.g test_add was written with the intention to fail and no other test was written at that point. 
@@ -17,3 +19,9 @@ Start code:
 
 def word_count(text):
     return len(text.split())
+
+def most_common_word(text):
+    text.lower()
+    # Counter.most_common returns a dict object of counter/word, the (1) returns the most common word and its count and [0][0] refers to only the word.
+    return Counter(text.split()).most_common(1)[0][0] 
+    

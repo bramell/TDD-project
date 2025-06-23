@@ -27,8 +27,19 @@ class TestTextTool(unittest.TestCase):
     def test_word_count(self):
         self.assertEqual(text_tool.word_count("Hello world"), 2)
         self.assertEqual(text_tool.word_count("He is dumb"), 3)
+    
+    def test_most_common_word(self):
+        self.assertEqual(text_tool.most_common_word("She is not guilty, I repeat - not guilty!"), "not")
 
+    def unique_words(self):
+        self.assertEqual(text_tool.unique_words("zebra"), ["zebra, Africa, penguin"])
+'''
+    def average_word_length(self):
+        self.assertEqual(text_tool.average_word_length("The suspect is not entirely believable in this case"), 4,7)
 
+    def sentence_count(self):
+        self.assertEqual(text_tool.sentence_count("I am 5 years old. My dad is 35 years old. He has a nice car."), 3)
+'''
 
 if __name__ == '__main__':
     unittest.main()
